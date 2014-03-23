@@ -8,12 +8,13 @@
 		<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('bootstrap.min.css');
-		echo $this->Html->css('bootstrap-theme.min.css');
-		echo $this->Html->css('font_arial_narrow.css');
-		echo $this->Html->css('style.css');
+		echo $this->Html->css('bootstrap.min');
+		echo $this->Html->css('blueimp-gallery.min');
+		echo $this->Html->css('font_arial_narrow');
+		echo $this->Html->css('style');
 
-		echo $this->Html->script('bootstrap.min.js');
+		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('blueimp-gallery.min');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
