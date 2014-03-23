@@ -1,6 +1,10 @@
 # User specific & automatically generated files #
 #################################################
+/app/webroot/img/Upload/
 /app/Config/database.php
+/app/Config/core.php
+/app/Config/email.php
+/app/Config/bootstrap.php
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
 /plugins
@@ -8,6 +12,7 @@
 /build
 /dist
 /tags
+/nbproject/
 
 # OS generated files #
 ######################
