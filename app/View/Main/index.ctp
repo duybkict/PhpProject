@@ -43,20 +43,44 @@
 </div>
 
 <div class="col-xs-12 gallery">
-
-
 	<div id="links">
 		<a href="img/gallery/image1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" data-gallery>
-			<img src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+			<img class="img-rounded first" src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
 		</a>
 		<a href="img/gallery/image2.jpg" title="Praesent nulla metus" data-gallery>
-			<img src="img/gallery/image2.jpg" alt="Praesent nulla metus">
+			<img class="img-rounded" src="img/gallery/image2.jpg" alt="Praesent nulla metus">
 		</a>
 		<a href="img/gallery/image3.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
-			<img src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
+			<img class="img-rounded" src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
 		<a href="img/gallery/image4.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
-			<img src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
+			<img class="img-rounded" src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
+		</a>
+		<a href="img/gallery/image1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" data-gallery>
+			<img class="img-rounded" src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+		</a>
+		<a href="img/gallery/image2.jpg" title="Praesent nulla metus" data-gallery>
+			<img class="img-rounded last" src="img/gallery/image2.jpg" alt="Praesent nulla metus">
+		</a>
+		
+		
+		<a href="img/gallery/image3.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+			<img class="img-rounded first" src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
+		</a>
+		<a href="img/gallery/image4.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+			<img class="img-rounded" src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
+		</a>
+		<a href="img/gallery/image1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" data-gallery>
+			<img class="img-rounded" src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+		</a>
+		<a href="img/gallery/image2.jpg" title="Praesent nulla metus" data-gallery>
+			<img class="img-rounded" src="img/gallery/image2.jpg" alt="Praesent nulla metus">
+		</a>
+		<a href="img/gallery/image3.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+			<img class="img-rounded" src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
+		</a>
+		<a href="img/gallery/image4.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+			<img class="img-rounded last" src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
 	</div>
 </div>
@@ -73,12 +97,12 @@
 </div>
 
 <script>
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
+	document.getElementById('links').onclick = function(event) {
+		event = event || window.event;
+		var target = event.target || event.srcElement,
+				link = target.src ? target.parentNode : target,
+				options = {index: link, event: event},
+		links = this.getElementsByTagName('a');
+		blueimp.Gallery(links, options);
+	};
 </script>
