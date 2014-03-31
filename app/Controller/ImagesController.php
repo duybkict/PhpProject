@@ -21,10 +21,40 @@ class ImagesController extends AppController {
 	public function admin_index()
 	{
 		$this->layout = 'admin_default';
-		
+
+		if ($this->request->is('post')) {			
+			$upload = $this->Thumb->upload_image('Image.image');
+			if (empty($upload)) {
+				$this->Session->setFlash('Cannot upload image', 'flash_error');
+			}
+			$this->request->data['Image']['image'] = $this->processPath($upload);
+
+			$thumb = $this->Thumb->thumb($upload);
+			if (empty($thumb)) {
+				$this->Session->setFlash('Resize image failed', 'flash_error');
+			}
+			$this->request->data['Image']['thumbnail'] = $this->processPath($thumb);
+
+			if ($this->Image->save($this->request->data)) {				
+				$this->Session->setFlash('Save image successfully', 'flash_success');
+				$this->redirect(array('controller' => 'images', 'action' => 'index', 'admin' => true));
+			} else {
+				$this->Session->setFlash('Resize image failed', 'flash_error');
+			}
+		}
+
 		$images = $this->Image->find('all');
 
 		$this->set(compact('images'));
+	}
+	
+	private function processPath($path) {
+		$imgRoot = WWW_ROOT . 'img' . DS;
+		
+		$path = str_replace($imgRoot, '', $path);
+		$path = str_replace('\\', '/', $path);
+		
+		return $path;
 	}
 
 }
