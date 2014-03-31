@@ -115,3 +115,7 @@ h2 {
 .gallery img.last {
 	margin-right: 0px;
 }
+
+.flash {
+	padding: 10px;
+}

@@ -12,7 +12,7 @@
 		echo $this->Html->css('bootstrap-theme.min');
 		echo $this->Html->css('blueimp-gallery.min');
 		echo $this->Html->css('font_arial_narrow');
-		echo $this->Html->css('style');
+		echo $this->Html->css('admin_style');
 
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('blueimp-gallery.min');
@@ -23,11 +23,12 @@
 		?>
 	</head>
 	<body>
-		<div id="container">
-			<div class="row wrap">
+		<?php echo $this->element('nav'); ?>
+		
+		<div class="container">
+			<div class="row">
 				<?php echo $this->fetch('content'); ?>								
 			</div>
-
 		</div>
 		<?php
 		if (Configure::read('debug') == 2) {
