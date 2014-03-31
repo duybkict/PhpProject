@@ -44,42 +44,42 @@
 
 <div class="col-xs-12 gallery">
 	<div id="links">
-		<a href="img/gallery/image1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" data-gallery>
+		<a href="img/gallery/image1.jpg" title="" data-gallery>
 			<img class="img-rounded first" src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
 		</a>
-		<a href="img/gallery/image2.jpg" title="Praesent nulla metus" data-gallery>
+		<a href="img/gallery/image2.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image2.jpg" alt="Praesent nulla metus">
 		</a>
-		<a href="img/gallery/image3.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+		<a href="img/gallery/image3.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
-		<a href="img/gallery/image4.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+		<a href="img/gallery/image4.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
-		<a href="img/gallery/image1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" data-gallery>
+		<a href="img/gallery/image1.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
 		</a>
-		<a href="img/gallery/image2.jpg" title="Praesent nulla metus" data-gallery>
+		<a href="img/gallery/image2.jpg" title="" data-gallery>
 			<img class="img-rounded last" src="img/gallery/image2.jpg" alt="Praesent nulla metus">
 		</a>
 		
 		
-		<a href="img/gallery/image3.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+		<a href="img/gallery/image3.jpg" title="" data-gallery>
 			<img class="img-rounded first" src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
-		<a href="img/gallery/image4.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+		<a href="img/gallery/image4.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
-		<a href="img/gallery/image1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" data-gallery>
+		<a href="img/gallery/image1.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
 		</a>
-		<a href="img/gallery/image2.jpg" title="Praesent nulla metus" data-gallery>
+		<a href="img/gallery/image2.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image2.jpg" alt="Praesent nulla metus">
 		</a>
-		<a href="img/gallery/image3.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+		<a href="img/gallery/image3.jpg" title="" data-gallery>
 			<img class="img-rounded" src="img/gallery/image3.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
-		<a href="img/gallery/image4.jpg" title="Mauris et augue ac arcu interdum volutpat vel eget turpis" data-gallery>
+		<a href="img/gallery/image4.jpg" title="" data-gallery>
 			<img class="img-rounded last" src="img/gallery/image4.jpg" alt="Mauris et augue ac arcu interdum volutpat vel eget turpis">
 		</a>
 	</div>
