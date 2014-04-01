@@ -14,8 +14,10 @@
 		echo $this->Html->css('font_arial_narrow');
 		echo $this->Html->css('style');
 
-		echo $this->Html->script('jquery.min');
+		echo $this->Html->script('jquery.min');		
 		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('bootstrap.file-input.min');
+		echo $this->Html->script('blueimp-gallery.min');
 		echo $this->Html->script('jquery.blueimp-gallery.min');
 
 		echo $this->fetch('meta');
