@@ -15,17 +15,15 @@
 		<?php foreach ($images as $image) : ?>
 			<div class="thumbnail-wrap">
 				<a class="btn btn-default btn-sm btn-preview" href="<?php echo $this->webroot . 'img/' . $image['Image']['image']; ?>" title="" data-gallery>Preview</a>
-				<button class="btn btn-danger btn-sm">Delete</button>
-				<a href="<?php echo $this->webroot . 'img/' . $image['Image']['image']; ?>" title="" data-gallery>
-					<?php echo $this->Html->image($image['Image']['thumbnail'], array('class' => 'img-thumbnail')); ?>
-				</a>
+				<?php echo $this->Form->postLink('Delete', array('action' => 'delete', $image['Image']['id']), array('confirm' => 'Are you sure?', 'class' => 'btn btn-danger btn-sm')); ?>
+				<?php echo $this->Html->image($image['Image']['thumbnail'], array('class' => 'img-thumbnail')); ?>
 			</div>
 		<?php endforeach; ?>
 	</div>
 </div>
 
 <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+<div id="blueimp-gallery" class="blueimp-gallery" data-start-slideshow="true" >
     <div class="slides"></div>
     <h3 class="title"></h3>
     <a class="prev">‹</a>
@@ -36,15 +34,6 @@
 </div>
 
 <script>
-	document.getElementById('links').onclick = function(event) {
-		event = event || window.event;
-		var target = event.target || event.srcElement,
-				link = target.src ? target.parentNode : target,
-				options = {index: link, event: event},
-		links = this.getElementsByClassName('btn-preview');
-		blueimp.Gallery(links, options);
-	};
-
 	$('input[type=file]').bootstrapFileInput();
 
 	function validateImage() {

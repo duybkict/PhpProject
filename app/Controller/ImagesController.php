@@ -37,7 +37,7 @@ class ImagesController extends AppController {
 
 			if ($this->Image->save($this->request->data)) {				
 				$this->Session->setFlash('Save image successfully', 'flash_success');
-				$this->redirect(array('controller' => 'images', 'action' => 'index', 'admin' => true));
+				return $this->redirect(array('controller' => 'images', 'action' => 'index', 'admin' => true));
 			} else {
 				$this->Session->setFlash('Resize image failed', 'flash_error');
 			}
@@ -46,6 +46,19 @@ class ImagesController extends AppController {
 		$images = $this->Image->find('all');
 
 		$this->set(compact('images'));
+	}
+	
+	public function admin_delete($id) {
+		if ($this->request->is('get')) {
+			throw new MethodNotAllowedException();
+		}
+		
+		if ($this->Image->delete($id)) {
+			$this->Session->setFlash('Delete image successfully', 'flash_success');
+			return $this->redirect(array('controller' => 'images', 'action' => 'index', 'admin' => true));
+		} else {
+			$this->Session->setFlash('Delete image failed', 'flash_error');
+		}
 	}
 	
 	private function processPath($path) {
