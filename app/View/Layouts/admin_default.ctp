@@ -18,6 +18,7 @@
 		echo $this->Html->script('bootstrap.file-input.min');
 		echo $this->Html->script('blueimp-gallery.min');
 		echo $this->Html->script('jquery.blueimp-gallery.min');
+		echo $this->Html->script('/TinyMCE/js/tiny_mce/tiny_mce.js', array('inline' => false));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

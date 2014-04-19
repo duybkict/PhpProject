@@ -6,7 +6,6 @@ App::uses('File', 'Utility');
 
 class ImagesController extends AppController {
 
-	public $uses = array();
 	public $components = array('Session', 'Auth', 'Thumb');
 
 	public function beforeFilter()
@@ -22,7 +21,7 @@ class ImagesController extends AppController {
 	{
 		$this->layout = 'admin_default';
 
-		if ($this->request->is('post')) {			
+		if ($this->request->is('post')) {
 			$upload = $this->Thumb->upload_image('Image.image');
 			if (empty($upload)) {
 				$this->Session->setFlash('Cannot upload image', 'flash_error');

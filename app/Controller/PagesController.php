@@ -5,7 +5,7 @@ App::uses('AuthComponent', 'Controller/Component');
 
 class PagesController extends AppController {
 
-	public $uses = array('Image');
+	public $uses = array('Image', 'Content');
 
 	public function index()
 	{
@@ -14,8 +14,9 @@ class PagesController extends AppController {
 		$this->layout = 'default';
 		
 		$images = $this->Image->find('all');
+		$content = $this->Content->find('first');
 		
-		$this->set(compact('title_for_layout', 'images'));
+		$this->set(compact('title_for_layout', 'images', 'content'));
 	}
 
 	public function admin_index()

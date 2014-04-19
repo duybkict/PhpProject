@@ -10,26 +10,7 @@
 		<h1>Suunnittelusta toteutukseen - jotta sina NAYT!</h1>
 	</center>
 	<div class="col-xs-5">
-		<h2>Teippaukset</h2>
-		<ul>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-		</ul>
-		<h2>Tulosteet</h2>
-		<ul>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-		</ul>
-		<h2>Teippaukset</h2>
-		<ul>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-		</ul>
-		<h2>Teippaukset</h2>
-		<ul>
-			<li>Leikkuriteipit (tekstit ja kuviot)</li>
-		</ul>
+		<?php echo $content['Content']['content']; ?>
 	</div>
 	<div class="col-xs-offset-3 col-xs-4 right-col">
 		<br />
